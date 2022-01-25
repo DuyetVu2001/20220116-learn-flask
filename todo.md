@@ -1,0 +1,13 @@
+- handle sqlalchemy exceptions (unique, duplicate, etc)
+- what response status code
+  - duplicate data 409
+  - missing field 400
+  - invalid field 400
+  - created 201
+  - success 200
+  - no content 204
+  - data not found ?
+- write unit test API (write docs for test case)
+- middleware check auth
+- delete many
+- data response from pagination

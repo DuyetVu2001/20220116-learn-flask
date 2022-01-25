@@ -1,0 +1,21 @@
+###
+GET http://127.0.0.1:5000/point
+
+###
+POST http://127.0.0.1:5000/point
+Content-Type: application/json
+
+{
+    "name": "123"
+}
+
+###
+PUT http://127.0.0.1:5000/point/3
+Content-Type: application/json
+
+{
+    "name": "1234"
+}
+
+###
+DELETE  http://127.0.0.1:5000/point/2
