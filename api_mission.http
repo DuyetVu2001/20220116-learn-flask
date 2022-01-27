@@ -1,0 +1,46 @@
+
+GET http://127.0.0.1:5000/mission
+
+###
+POST http://127.0.0.1:5000/mission
+Content-Type: application/json
+
+{
+    "name": "mission2",
+    "steps": [
+        {
+            "start_point_id": 1,
+            "end_point_id": 1
+        },
+        {
+            "start_point_id": 1,
+            "end_point_id": 1
+        }
+    ]
+}
+
+###
+PUT http://127.0.0.1:5000/mission/17
+Content-Type: application/json
+
+{
+    "name": "mission17 edit 123",
+    "steps": [
+        {
+            "id": 10,
+            "start_point_id": 2,
+            "end_point_id": 1
+        },
+        {
+            "id": 11,
+            "start_point_id": 1,
+            "end_point_id": 2
+        }
+    ]
+}
+
+###
+DELETE  http://127.0.0.1:5000/mission/1
+
+###
+GET http://127.0.0.1:5000/step

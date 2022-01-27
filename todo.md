@@ -1,13 +1,17 @@
-- handle sqlalchemy exceptions (unique, duplicate, etc)
 - what response status code
   - duplicate data 409
+  - all ready exists 409
+  - id not found 404
   - missing field 400
   - invalid field 400
+  - no content 204
   - created 201
   - success 200
-  - no content 204
-  - data not found ?
+- handle sqlalchemy exceptions (unique, duplicate, etc)
 - write unit test API (write docs for test case)
 - middleware check auth
 - delete many
 - data response from pagination
+- fallback mission when create steps fail
+- write decorator to handle exceptions
+- relationship (backref-backref, lazy)

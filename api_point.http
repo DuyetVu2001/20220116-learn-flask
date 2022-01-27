@@ -6,7 +6,7 @@ POST http://127.0.0.1:5000/point
 Content-Type: application/json
 
 {
-    "name": "123"
+    "name": "point 2"
 }
 
 ###

@@ -1,0 +1,23 @@
+###
+GET http://127.0.0.1:5000/group
+
+###
+POST http://127.0.0.1:5000/group
+Content-Type: application/json
+
+{
+    "name": "group 3",
+    "robots_id": [1],
+    "mission_id": 1
+}
+
+###
+PUT http://127.0.0.1:5000/group/3
+Content-Type: application/json
+
+{
+    "name": "agv1"
+}
+
+### 
+DELETE  http://127.0.0.1:5000/group/4

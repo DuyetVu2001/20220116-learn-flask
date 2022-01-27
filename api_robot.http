@@ -1,0 +1,21 @@
+###
+GET http://127.0.0.1:5000/robot
+
+###
+POST http://127.0.0.1:5000/robot
+Content-Type: application/json
+
+{
+    "name": "agv 2"
+}
+
+###
+PUT http://127.0.0.1:5000/robot/3
+Content-Type: application/json
+
+{
+    "name": "agv1"
+}
+
+### 
+DELETE  http://127.0.0.1:5000/robot/1

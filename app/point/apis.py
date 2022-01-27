@@ -20,8 +20,10 @@ def get_all_point():
 def create_point():
     body = request.get_json()
 
-    if not body or not body.get('name'):
-        return make_response(jsonify({"message": "Missing name field!"}), 400)
+    if not body:
+        return make_response({"message": "No input data provided"}, 400)
+    elif "name" not in body or body["name"] == "":
+        return make_response({"message": "Please provide a name"}, 400)
 
     point = Point.query.filter_by(name=body["name"]).first()
     if point:
